@@ -11,21 +11,21 @@ const pages = () => {
   return (
     <div className='App'>
    
-    <Navbars />
+      <Navbars />
 
-    <div className='row' style={{ margin: "40px 5px  5px 5px" , minHeight: 'calc(100vh - 50px)'}}>
-      <div className='col-md-3'>
-        <Side />
-        <Used />
+      <div className='row' style={{ margin: "40px 5px  5px 5px" , minHeight: 'calc(100vh - 50px)'}}>
+        <div className='col-md-3'>
+          <Side />
+          <Used />
+        </div>
+        <div className='col-md-9'>
+      <PageLists />
+        </div>
       </div>
-      <div className='col-md-9'>
-    <PageLists />
-      </div>
-    </div>
-   
+     
 
-  <Footers />
-</div>
+    <Footers />
+  </div>
   )
 }
 
