@@ -38,7 +38,7 @@ const PageLists = () => {
             marginBottom: "10px",
           }}
         >
-          Pges List
+          Pages List
         </Card.Header>
         <input
           type='text'
