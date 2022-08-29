@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap'
 const Footers = () => {
   return (
     <div>
-      <div style={{backgroundColor:"#3b3a3a",height:"50px",color:"#fff", marginTop:"40px", }}>
+      <div style={{backgroundColor:"#3b3a3a",height:"50px",color:"#fff",position:'relative',bottom:'0px' }}>
     
       <Card.Body style={{borderRadius: '0px! important '}}>
        

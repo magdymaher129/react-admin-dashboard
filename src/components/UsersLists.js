@@ -33,26 +33,36 @@ const UsersLists = () => {
       <Card  >
       <Card.Header style={{ backgroundColor:'#dc3545',color:'#fff',marginBottom:'10px' }}>Users List</Card.Header>
       <input type="text" placeholder="Filter users ..."  style={{ marginBottom:'10px',width:'95%',marginLeft:'20px' }}/>
-       <Table striped bordered hover  style={{ width:'95%',marginLeft:'2%' }}>
+       <Table striped bordered hover   style={{ maxWidth: "90%", marginLeft: "2rem" }}>
       <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-          <th></th>
+        <tr className='row text-center'>
+          <th className='col-md-2 col-sm-12'>#</th>
+          <th className='col-md-2 col-sm-12'>First Name</th>
+          <th className='col-md-2 col-sm-12'>Last Name</th>
+          <th className='col-md-4 col-sm-12'>Email</th>
+          <th className='col-md-2 col-sm-12'></th>
         </tr>
       </thead>
       <tbody>
       {users.map(user => {
 
-return (    <tr key={user.id} style={{height:'50px'}}>
-      <td style={{width:'5%'}}>{user.id}</td>
-      <td style={{width:'15%'}}>{user.FirstName}</td>
-      <td style={{width:'15%'}}>{user.SecondName}</td>
-      <td  style={{ width:'15%' }}>{user.email}</td>
-     <td style={{width:'15%'}}> <div className='row px-4 ' ><button className='btn btn-success col-10 my-2' style={{width:'80px',marginRight:'10px'}} > Edit</button>
-      <button className='btn btn-danger col-10'style={{width:'80px'}}> Delete</button></div></td>
+return (    <tr key={user.id} className='row text-center'>
+      <td className='col-md-2 col-sm-12'>{user.id}</td>
+      <td className='col-md-2 col-sm-12'>{user.FirstName}</td>
+      <td className='col-md-2 col-sm-12'>{user.SecondName}</td>
+      <td  className='col-md-4 col-sm-12'>{user.email}</td>
+      <td className='col-md-2 col-sm-12'>
+                    <div className='row px-3 '>
+                      <button className='btn btn-success my-1 col-12'>
+                        {" "}
+                        <i class='fa fa-pencil' aria-hidden='true'></i>
+                      </button>
+                      <button className='btn btn-danger my-1 col-12'>
+                        {" "}
+                        <i class='fa fa-times' aria-hidden='true'></i>
+                      </button>
+                    </div>
+                  </td>
     </tr>)
   }
  

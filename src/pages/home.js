@@ -13,7 +13,7 @@ const Home = () => {
       <header className='App-header'>
         <Navbars />
 
-        <div className='row' style={{ margin: "40px 5px  5px 5px" }}>
+        <div className='row' style={{ margin: "40px 5px  5px 5px"}}>
           <div className='col-md-3'>
             <Side />
           </div>
@@ -21,7 +21,7 @@ const Home = () => {
             <Panel />
           </div>
         </div>
-        <div className='row' style={{ margin: "40px 5px  5px 5px" }}>
+        <div className='row' style={{ margin: "10px 5px  5px 5px" , minHeight: 'calc(100vh - 50px)' }}>
           <div className='col-md-3'>
             <Used />
           </div>

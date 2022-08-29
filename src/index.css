@@ -1,66 +1,85 @@
 body {
-  padding:0;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
 }
-html{
+html {
   box-sizing: border-box;
-  padding:0;
+  padding: 0;
   margin: 0;
+  font-size: 100%;
 }
 
-.second-navbar{
+.second-navbar {
   height: 70px;
 
-  background-color:#3b3a3a !important;
+  background-color: #3b3a3a !important;
   display: grid;
-  grid-template-columns:1fr 1fr 8fr 2fr 1fr  ;
-  padding-top:10px;
+  grid-template-columns: 1fr 1fr 5fr 2fr 1fr;
+  padding-top: 10px;
 }
-.navbar-header{
-  color:beige;
-  padding-left: 20px ;
+.navbar-header {
+  color: beige;
+  padding-left: 20px;
   margin-top: 10px;
 }
-.NavDropdown{
+.NavDropdown {
   position: absolute;
-left:55%;
-
+  left: 55%;
 }
-.nav-details{
-  color:darkgray;
-  margin: 15px 30px;
-
+.nav-details {
+  color: darkgray;
+  margin: 15px;
 }
-.nav-brand{
+.nav-brand {
   margin-left: 22px;
 
   font-size: 36px;
   color: aliceblue;
 }
-.panelBox{
+.panelBox {
   text-align: center;
   padding: 15px 0px;
-margin: 10px;
-  height:100px;
+  margin: 10px;
+  height: 100px;
 
-  background-color:#f2f2f2;
+  background-color: #f2f2f2;
 }
-.link{
+.link {
   list-style: none;
   text-decoration: none;
-  color:aliceblue;
+  color: aliceblue;
   margin-left: 20px;
   padding: 5px;
   border-radius: 10px;
 }
-.link:hover{
-  color:black;
+.link:hover {
+  color: black;
   font-weight: bold;
   background-color: lightgray;
+}
+
+@media screen and (max-width: 740px) {
+  html {
+    font-size: 80%;
+  }
+  table {
+    max-width: 50%;
+  }
+  th {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 80%;
+  }
+  table {
+    max-width: 50%;
+  }
 }

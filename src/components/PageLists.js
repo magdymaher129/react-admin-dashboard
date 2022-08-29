@@ -38,7 +38,7 @@ const PageLists = () => {
             marginBottom: "10px",
           }}
         >
-          Pages List
+          Pges List
         </Card.Header>
         <input
           type='text'
@@ -49,50 +49,39 @@ const PageLists = () => {
           striped
           hover
           bordered
-          style={{ width: "95%", marginLeft: "2%" }}
+          style={{ maxWidth: "90%", marginLeft: "2rem" }}
         >
           <thead>
-            <tr>
-              <th>#</th>
-              <th>page</th>
-
-              <th>published</th>
+            <tr className='row text-center'>
+              <th className='col-md-2 col-sm-12'>#</th>
+              <th className='col-md-6 col-sm-12 '> page</th>
+              <th className='col-md-2 col-sm-12'>published</th>
+              <th className='col-md-2 col-sm-12'> </th>
             </tr>
           </thead>
           <tbody>
             {pages.map((page) => {
               return (
-                <tr key={page.id}>
-                  <td style={{ width: "5%" }}>{page.id}</td>
-                  <td style={{ width: "20%" }}>{page.page}</td>
+                <tr key={page.id} className='row text-center'>
+                  <td className='col-md-2 col-sm-12'>{page.id}</td>
+                  <td className='col-md-6 col-sm-12 '>{page.page}</td>
 
-                  <td className='text-center' style={{ width: "5%" }}>
+                  <td className='col-md-2 col-sm-12 '>
                     {page.published ? (
                       <i class='fa fa-check' aria-hidden='true'></i>
                     ) : (
                       <i class='fa fa-times' aria-hidden='true'></i>
                     )}
                   </td>
-                  <td style={{ width: "15%" }}>
-                    {" "}
-                    <div className='row px-4'>
-                      <button
-                        className='btn btn-success col-6 my-2'
-                        style={{
-                          width: "80px",
-                          marginRight: "10px",
-                          height: "40px",
-                        }}
-                      >
+                  <td className='col-md-2 col-sm-12'>
+                    <div className='row px-3 '>
+                      <button className='btn btn-success my-1 col-12'>
                         {" "}
-                        Edit
+                        <i class='fa fa-pencil' aria-hidden='true'></i>
                       </button>
-                      <button
-                        className='btn btn-danger col-6 my-2'
-                        style={{ width: "80px", height: "40px" }}
-                      >
+                      <button className='btn btn-danger my-1 col-12'>
                         {" "}
-                        Delete
+                        <i class='fa fa-times' aria-hidden='true'></i>
                       </button>
                     </div>
                   </td>

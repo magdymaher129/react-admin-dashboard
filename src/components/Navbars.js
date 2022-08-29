@@ -37,6 +37,26 @@ const Navbars = () => {
               <Link to='/posts' className="link">posts</Link>
               <Link to='/users' className="link">users</Link>
             </Nav>
+            <section>
+          <Dropdown >
+            <Dropdown.Toggle
+              variant='light'
+              id='dropdown-basic'
+              style={{ marginTop: "5px"}}
+            >
+              Create Controls
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href='#/action-1' onClick={handleShow}>
+                Create Page
+              </Dropdown.Item>
+              <Dropdown.Item href='#/action-2' onClick={handlePostShow}>Create Post</Dropdown.Item>
+              <Dropdown.Item href='#/action-3' onClick={handleUserShow}>Create User</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+         
+        </section>
             <Nav>
               <Nav.Link eventKey={2} href='#memes'>
                 <span style={{ margin: "0 10px" }}>
@@ -59,30 +79,12 @@ const Navbars = () => {
       <section className='second-navbar '>
         <div className='nav-brand '>
           {" "}
-          <i className='fa fa-gear' style={{marginLeft:'50px',fontSize:'45px'}}></i>
+          <div></div>
+          <i className='fa fa-gear' style={{fontSize:'3rem'}}></i>
         </div>
         <h4 className='navbar-header'>Dashboard</h4>
-        <h6 className='nav-details'>mange your site</h6>
-        <section>
-          <Dropdown >
-            <Dropdown.Toggle
-              variant='light'
-              id='dropdown-basic'
-              style={{ marginTop: "5px"}}
-            >
-              Create Controls
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu>
-              <Dropdown.Item href='#/action-1' onClick={handleShow}>
-                Create Page
-              </Dropdown.Item>
-              <Dropdown.Item href='#/action-2' onClick={handlePostShow}>Create Post</Dropdown.Item>
-              <Dropdown.Item href='#/action-3' onClick={handleUserShow}>Create User</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-         
-        </section>
+        <h8 className='nav-details'>mange your site</h8>
+       
       </section>
     <CreatePage  show={show} setShow={setShow} handleClose={handleClose}/>
     <CreatePost  postshow={postshow} setPostShow={setPostShow} handlePostClose={handlePostClose}/>
