@@ -44,8 +44,8 @@ html {
 }
 .panelBox {
   text-align: center;
-  padding: 15px 0px;
-  margin: 10px;
+  padding: 15px;
+  margin: 2px ;
   height: 100px;
 
   background-color: #f2f2f2;
@@ -70,16 +70,48 @@ html {
   }
   table {
     max-width: 50%;
+    
   }
+  td{
+    font-size:1.5rem;
+   
+  }
+
   th {
     display: none;
   }
+  @media screen and (max-width: 550px) {
+    html {
+   
+      font-weight: bolder;
+    }
+    table {
+      max-width: 40%;
+    }
+  }
 }
 @media screen and (max-width: 400px) {
+  row {
+  
+    margin-left: 0%;
+     
+  }
+  td{
+    width:50%;
+    
+  }
   html {
-    font-size: 80%;
+  
   }
   table {
-    max-width: 50%;
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+  
+  }
+  table {
+    max-width: 20%;
   }
 }

@@ -7,15 +7,15 @@ const Panel = () => {
         <Card.Header style={{ backgroundColor: "#dc3545", color: "#fff" }}>
           Featured
         </Card.Header>
-        <div className='row  mx-3 my-2'>
-          <div className='col-md-3  panelBox'>
+        <div className='row  mx-2  my-2 '>
+          <div className='col-md-2  panelBox'>
             <h4>
               <i class='fa fa-list-alt' aria-hidden='true'></i> 20
             </h4>
             <h4> pages</h4>
           </div>
 
-          <div className='col-md-2  panelBox'>
+          <div className='col-md-2   panelBox'>
             <h4>
               <i class='fa fa-pencil' aria-hidden='true'></i> 200
             </h4>

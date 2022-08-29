@@ -80,10 +80,10 @@ const Navbars = () => {
         <div className='nav-brand '>
           {" "}
           <div></div>
-          <i className='fa fa-gear' style={{fontSize:'3rem'}}></i>
+          <i className='fa fa-gear' style={{fontSize:'3rem',marginLeft:'20px'}}></i>
         </div>
         <h4 className='navbar-header'>Dashboard</h4>
-        <h8 className='nav-details'>mange your site</h8>
+  
        
       </section>
     <CreatePage  show={show} setShow={setShow} handleClose={handleClose}/>

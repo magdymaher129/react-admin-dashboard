@@ -40,7 +40,7 @@ const TabledData = () => {
           striped
           bordered
           hover
-          style={{ maxWidth: "90%", marginLeft: "2rem" }}
+          style={{ maxWidth: "90%", margin:'1rem 2.0rem' }}
         >
           <thead>
             <tr className='row text-center'>
@@ -53,7 +53,7 @@ const TabledData = () => {
           <tbody>
             {users.map((user) => {
               return (
-                <tr key={user.id} className='row text-center'>
+                <tr key={user.id} className='row text-center  '>
                   <td className='col-md-2 col-sm-12'>{user.id}</td>
                   <td className='col-md-3 col-sm-12'>{user.FirstName}</td>
                   <td className='col-md-3 col-sm-12'>{user.SecondName}</td>
